@@ -37,7 +37,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+{
+  basename: "/oc_da-jr_p11_kasa",  // Le chemin du dépôt GitHub Pages
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
