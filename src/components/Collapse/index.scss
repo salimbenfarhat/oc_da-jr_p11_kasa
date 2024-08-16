@@ -1,0 +1,47 @@
+.collapse {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &__header {
+        background-color: #ff6060;
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__arrow {
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__arrow--open {
+        transform: rotate(180deg);
+    }
+
+    &__content {
+        background-color: #f6f6f6;
+        padding: 15px 20px;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        list-style-type: disc;
+        margin-bottom: 5px;
+    }
+}

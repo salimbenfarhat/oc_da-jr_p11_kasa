@@ -1,0 +1,162 @@
+.accommodation {
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &__details {
+        flex: 1;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #FF6060;
+        margin-bottom: 10px;
+    }
+
+    &__location {
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__tag {
+        background-color: #FF6060;
+        color: #FFFFFF;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    &__host {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__host-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__host-name {
+        margin-right: 10px;
+        color: #FF6060;
+        font-size: 18px;
+        max-width: 100px;
+    }
+
+    &__host-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__collapses {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &__collapse {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    &__collapse--right {
+        margin-right: 0;
+    }
+}
+
+// Responsive pour tablette
+@media screen and (max-width: 1024px) {
+    .accommodation {
+        padding: 15px;
+
+        &__info {
+            flex-direction: column;
+        }
+
+        &__title {
+            font-size: 27px;
+        }
+
+        &__location {
+            font-size: 16px;
+        }
+
+        &__tag {
+            font-size: 12px;
+        }
+
+        &__host {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        &__host-name {
+            font-size: 15px;
+            max-width: 100%;
+            width: 50%;
+        }
+
+        &__host-picture {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__collapses {
+            flex-direction: column;
+        }
+
+        &__collapse {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        &__collapse--right {
+            margin-right: 0;
+        }
+    }
+}
+
+// Responsive pour mobile
+@media screen and (max-width: 768px) {
+    .accommodation {
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__location {
+            font-size: 14px;
+        }
+
+        &__tag {
+            font-size: 10px;
+        }
+
+        &__collapse {
+            margin-bottom: 8px;
+        }
+
+        &__host-name {
+            font-size: 12px;
+        }
+    }
+}

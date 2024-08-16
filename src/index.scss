@@ -1,0 +1,44 @@
+.montserrat-700 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-500 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+main {
+    max-width: 1440px;
+    margin: 3% auto;
+    padding: 0 8%;
+}
+
+// Responsive pour tablette
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 0 5%;
+    };
+}
+
+// Responsive pour mobile
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 2%;
+    };
+}
